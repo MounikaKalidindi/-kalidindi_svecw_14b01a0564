@@ -23,7 +23,7 @@ public class Main {
 		
 		Student s = new Student(501, "K Mouni", date, 250.50);
 		
-		sg.addLast(s);
+		/*sg.addLast(s);
 		/*Student[] st = sg.getStudents();
 		for (int i = 0; st[i] != null ; i++)
 		{

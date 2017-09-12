@@ -37,11 +37,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		if (students[i] == null || index < 0 || index >= students.length)
+		/*if (students[i] == null || index < 0 || index >= students.length)
 		{
 			throw new IllegalArgumentException("student value doesnt exist");
 		}
-		return students[index];
+		return students[index];*/
+		return null;
 	}
 
 	@Override
@@ -144,7 +145,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getNextStudent(Student student) {
 		// Add your implementation here
-		if ((student == null)
+		/*if ((student == null)
 		{
 			throw new IllegalArgumentException("student value is null");
 		}
@@ -160,6 +161,7 @@ public class StudentGroup implements StudentArrayOperation {
 				break;
 			}
 		}
-		return student[i+1];
+		return student[i+1];*/
+		return null;
 	}
 }
