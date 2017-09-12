@@ -26,7 +26,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		return null;
+		return students;
 	}
 
 	@Override
@@ -37,7 +37,11 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		return null;
+		if (students[i] == null || index < 0 || index >= students.length)
+		{
+			throw new IllegalArgumentException("student value doesnt exist");
+		}
+		return students[index];
 	}
 
 	@Override
@@ -53,6 +57,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
+		/*if (student == null)
+		{
+			throw new IllegalArgumentException("student value is null");
+		}
+		 students = Arrays.copyOf(students, students.length + 1);
+		 students[students.length - 1] = student;*/
 	}
 
 	@Override
@@ -134,6 +144,22 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getNextStudent(Student student) {
 		// Add your implementation here
-		return null;
+		if ((student == null)
+		{
+			throw new IllegalArgumentException("student value is null");
+		}
+		int i = 0;
+		while (1)
+		{
+			if (i >= students.length)
+			{
+				return null;
+			}
+			if (student[i] == student)
+			{
+				break;
+			}
+		}
+		return student[i+1];
 	}
 }
